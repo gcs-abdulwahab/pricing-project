@@ -11,7 +11,10 @@ const props = defineProps({
 
 <template>
    
-   <div class="bg-white flex flex-col space-y-2 p-2  rounded-2xl shadow-2xl w-1/4  " >
+   <div class="bg-white flex flex-col  space-y-2 p-2  rounded-2xl shadow-2xl 
+   
+   
+   " >
         <h1 class="uppercase text-2xl font-bold "> {{ item.offerTag }}</h1>
         <h2 class="font-semibold" > ${{ item.price}} / Year</h2>
         <button type="button" class="font-bold text-blue-700 bg-gray-300 
@@ -20,7 +23,7 @@ const props = defineProps({
         <hr/>
         <ul class="flex flex-col bg-white p-5 list-none items-start">            
             <li  v-for="(feature, index) in item.features" :key="index"
-             class="">
+             class="truncate ">
              
              <i class="px-2 fas fa-check-circle text-green-500"
                 :class="feature.value ? 'text-green-500 ' : 'text-red-500  fa-times-circle '"            
@@ -28,7 +31,9 @@ const props = defineProps({
              
              
              
-             {{ feature.name }} </li>
+             {{ feature.name }} 
+            
+            </li>
             
              
       

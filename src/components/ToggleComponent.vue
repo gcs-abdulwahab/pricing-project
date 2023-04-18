@@ -7,11 +7,8 @@
       text-sm font-medium text-gray-900 dark:text-gray-300
       mr-3 -top-1
       ">Monthly</span>
-
       <label class="relative inline-flex items-center cursor-pointer">
-
         <input type="checkbox" value="" class="sr-only peer">
-
         <!-- <toggle-button :value="true"
                :labels="{checked: 'Foo', unchecked: 'Bar'}"/> -->
 

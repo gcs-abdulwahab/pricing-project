@@ -53,6 +53,12 @@ const Items = [
       { name: "Dedicated account manager", value: false },
       { name: "Custom SLA", value: true },
       { name: "Custom features", value: false },
+      { name: "Dedicated account manager", value: false },
+      { name: "Custom SLA", value: true },
+      { name: "Custom features", value: false },
+      { name: "Dedicated account manager", value: false },
+      { name: "Custom SLA", value: true },
+      { name: "Custom features", value: false },
     ],
   },
 ];
@@ -65,15 +71,15 @@ const items = ref(Items);
 
 <template>
   <div class="container mx-auto bg-red-400 text-center  py-4 flex flex-col">
-    <h1 class="font-bold mb-2 text-2xl"> Pricing</h1>
+    <h1 class="font-bold mb-2 text-2xl    dark:text-white  "> Pricing</h1>
     <ToggleComponent />
        
-    <section id="pricing" class="bg-blue-200 h-auto flex flex-row mt-2 p-2  justify-around">
+    <section id="pricing" class="bg-blue-200 h-auto flex  flex-col md:flex-row  
+    items-center   mt-2 p-2  justify-around">
 
-      <!-- <PriceComponent  /> -->
-      <PriceComponent v-for="item in items" :key="item.id" :item="item" />
+      
+      <PriceComponent class="mb-2 w-full  " v-for="item in items" :key="item.id" :item="item" />
 
-       
 
 
     </section>
