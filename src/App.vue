@@ -75,10 +75,10 @@ const items = ref(Items);
     <ToggleComponent />
        
     <section id="pricing" class="bg-blue-200 h-auto flex  flex-col md:flex-row  
-    items-center   mt-2 p-2  justify-around">
+    items-center   mt-2 p-2  space-x-3 justify-around md:items-start">
 
       
-      <PriceComponent class="mb-2 w-full  " v-for="item in items" :key="item.id" :item="item" />
+      <PriceComponent class="mb-2 w-full " v-for="item in items" :key="item.id" :item="item" />
 
 
 
